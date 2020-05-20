@@ -18,10 +18,10 @@ id: 2
 
 
 ## Question 1
-When organising data should we use the **long** format or the **tidy** format?
+When organising data should we use the **wide** format or the **tidy** format?
 
 <choice id="1">
-<opt text="Long format">
+<opt text="Wide format">
 No, we should use the <i>tidy</i> format
 </opt>
 <opt text="Tidy format" correct="true">
