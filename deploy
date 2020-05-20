@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git add .
+git commit -m "updated site"
+git push
+curl -X POST -d {} https://api.netlify.com/build_hooks/5ec56d5faa84b5025e5efa94

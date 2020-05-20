@@ -1,0 +1,25 @@
+{
+    "courseId": "r-crash",
+    "title": "A crash course in R",
+    "slogan": "Smashing into R",
+    "description": "This crash course in R will get you started with using R. It's designed for those who have absolutely no programming experience.",
+    "bio": "Dr Lincoln Colling is a lecturer in Psychology at the University of Sussex",
+    "siteUrl": "https://r-crash.mindsci.ne",
+    "twitter": "@lincoln81",
+    "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
+    "preloadTemplate": "source('/home/jovyan/preload.r')\n  \n\n  \n\n.solution <- \"${solutionEscaped}\"\n\n${solution}\n\n",
+    "testTemplate": "${test}\n\n.solution <- \"${solutionEscaped}\"\n\npreload()\n\nsuccess <- function(text) {\ncat(paste(\"\\033[32m\",text, \"\\033[0m\", sep = \"\"))\n}\n\ntryCatch({\npretest()\n}, \nerror = function(e) {\n    cat(paste(\"\\033[31m\", e[1], \"\\033[0m\", sep = \"\"))\n})\n\n\n${solution}\n\ntryCatch({\ntest()\n}, error = function(e) {\n    cat(paste(\"\\033[31m\", e[1], \"\\033[0m\", sep = \"\"))\n})",
+        "juniper": {
+        "repo": "ljcolling/teaching-binder",
+        "branch": "master",
+        "lang": "r",
+        "kernelType": "ir",
+        "debug": false
+    },
+    "showProfileImage": true,
+    "footerLinks": [
+        { "text": "Website", "url": "https://r-crash.mindsci.net" },
+        { "text": "Source", "url": "https://github.com/ljcolling/r-crash-course/" }
+    ],
+    "theme": "#013035"
+}
