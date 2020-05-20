@@ -136,12 +136,6 @@ class CodeBlock extends React.Component {
                                     debug={debug}
                                     actions={({ runCode }) => (
                                         <>
-                                            <Button onClick={() => runCode(value => makePreload(preloadTemplate, value) 
-                                                )
-                                                }
-                                                >
-                                                    Run Code
-                                                    </Button>
                                             {testFile && (
                                                 <Button
                                                     variant="primary"
